@@ -2513,3 +2513,26 @@ E. Template Specific Elements
 .ts-inputs__transparent textarea:active, .ts-inputs__transparent textarea:focus {
     color: #000;
 }
+
+
+.navbar2 {
+    font-size: .875rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    transition: .3s ease;
+    opacity: 1 !important;
+}
+
+.navbar2.in {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.navbar2.in .ts-background {
+    opacity: 1 !important;
+}
+
+.navbar2 .ts-background {
+    transition: 1s ease;
+}
