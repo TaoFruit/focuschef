@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -473,10 +474,10 @@
 
             <section class="text-center my-5 py-5">
                 <div content="ts-title mb-5">
-                    <h3 class="mb-1">Still Not Decided?</h3>
-                    <h4 class="font-weight-normal ts-opacity__50 mb-5">Individual consultation is right for you</h4>
+                    <h3 class="mb-1">Seeking Help in Personal Development?</h3>
+                    <h4 class="font-weight-normal ts-opacity__50 mb-5">We offer Private Coaching</h4>
                 </div>
-                <a href="#" class="btn btn-primary btn-lg">Ask for Individual Consultation</a>
+                <a href="#" class="btn btn-primary btn-lg">Book a Focus Chef</a>
             </section>
 
             <hr>
@@ -724,50 +725,54 @@
                                 <h3>Contact Us</h3>
                                 <address>
                                     <figure>
-                                        2590 Rocky Road
-                                        Philadelphia, PA 19108
+                                        48 Wall St<br>
+                                        New York, NY 10005
                                     </figure>
                                     <br>
                                     <figure>
                                         <div class="font-weight-bold">Email:</div>
-                                        <a href="#">office@example.com</a>
+                                        <a href="#">info@focuschef.com</a>
                                     </figure>
                                     <figure>
                                         <div class="font-weight-bold">Phone:</div>
-                                        +1 215-606-0391
+                                        +1 929-999-6624
                                     </figure>
-                                    <div class="font-weight-bold">Skype:</div>
-                                    LifeCoach
+                                    <div class="font-weight-bold">Facebook:</div>
+                                    @FocusChef
                                 </address>
                                 <!--end address-->
                             </div>
                             <!--end col-md-4-->
                             <div class="col-md-8">
-                                <h3>Contact Form</h3>
-                                <form id="form-contact" method="post" class="clearfix ts-form ts-form-email ts-inputs__transparent" data-php-path="assets/php/email.php">
+                                <form enctype='application/json' id="form-contact" method="POST" action="https://prod-20.eastus.logic.azure.com:443/workflows/a8bed9230a7445338ffbbecaa103ec67/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=tz8jPn70VwbD7XM6aZw6T2gNB_sxAutBWp5I-hKv6cA" id="request" class="clearfix ts-form ts-form-email ts-inputs__transparent form-contact"  data-toggle="validator" novalidate="true"> 
                                     <div class="row">
-                                        <div class="col-md-6 col-sm-6">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                             <div class="form-group">
-                                                <label for="form-contact-name">Your Name *</label>
-                                                <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Your Name" required>
+                                                <input type="text" placeholder="First Name" name="firstname" class="form-control">
                                             </div>
-                                            <!--end form-group -->
                                         </div>
-                                        <!--end col-md-6 col-sm-6 -->
-                                        <div class="col-md-6 col-sm-6">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
                                             <div class="form-group">
-                                                <label for="form-contact-email">Your Email *</label>
-                                                <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Your Email" required>
+                                                <input type="text" placeholder="Last  Name" name="lastname" class="form-control">
                                             </div>
-                                            <!--end form-group -->
                                         </div>
-                                        <!--end col-md-6 col-sm-6 -->
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="form-group">
+                                                <input type="email" placeholder="Email" name="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <div class="form-group">
+                                                <input type="tel" placeholder="Phone Number" name="tel" class="form-control">
+                                            </div>
+                                        </div>
                                     </div>
                                     <!--end row -->
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="form-contact-message">Your Message *</label>
                                                 <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Your Message" required></textarea>
                                             </div>
                                             <!--end form-group -->
@@ -780,6 +785,12 @@
                                     </div>
                                     <!--end form-group -->
                                     <div class="form-contact-status"></div>
+                                    <input type="hidden" name="interest" value="General">
+                                    <input type="hidden" name="test" value="off">
+                                    <input type="hidden" name="owner" value="20bfadb9-4991-e911-a95b-000d3a34ec54">
+                                    <input type="hidden" name="website" value="Focus Chef">
+                                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                                    <input type="text" name="_gotcha" style="display:none" />
                                 </form>
                                 <!--end form-contact -->
                             </div>
@@ -788,7 +799,7 @@
                     </div>
                     <!--end ts-box-->
                     <div class="text-center text-white py-4">
-                        <small>© 2018 ThemeStarz, All Rights Reserved</small>
+                        <small>© 2019 <a class="text-white" href="https://taofruit.com" target="_blank">Tao Fruit</a>, All Rights Reserved</small>
                     </div>
                 </div>
                 <!--end container-->
@@ -845,6 +856,57 @@
 	<script src="assets/js/jquery.validate.min.js"></script>
 	<script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+      
+    <!-- <script src="assets/js/jquery.validate.js"></script> -->
+    <script>
+        $("#form-contact").validate();
+    </script>
+
+    <script>
+        $("#form-contact").submit(function(event){
+        if (!$("#form-contact").validate().form()) {
+        return false; //doesn't validate
+        }else
+        {
+        event.preventDefault(); //prevent default action 
+        var post_url = $(this).attr("action"); //get form action url
+        var request_method = $(this).attr("method"); //get form GET/POST method
+        var content_type = $(this).attr("enctype"); //get form GET/POST method
+        var form_data = $(this).serialize(); //Encode form elements for submission
+        $.ajax({
+                type: $(this).attr('method'),
+                url: $(this).attr('action'),
+                data: $(this).serialize(),
+                success: function (data) {
+                    $("#form-contact")[0].reset();
+                    $("input:checkbox").attr('checked', false);
+                    Swal({
+                    title: '<strong>Message Sent</strong>',
+                    type: 'success',
+                    html:
+                        'Please check your email for a response from us.<br>We also suggest to join the Ignite Curiosity Community!',
+                    showCloseButton: true,
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<a style="color: white" href="#"><i class="fa fa-address-card"></i> OK</a>',
+                    confirmButtonAriaLabel: 'Login',
+                });
+                    console.log('Submission was successful.');
+                    console.log(data);
+                    
+                },
+                error: function (data) {
+                    console.log('An error occurred.');
+                    console.log(data);
+                },
+            }).then(function(response){ //
+            $("#server-results").html(response);
+        }); //form is validated do your work
+        }
+    });
+    </script>
+
 
 </body>
 </html>
