@@ -1,0 +1,7 @@
+.form-group.has-error .form-control {
+    box-shadow: 0 0 0 0.125rem rgba(220, 53, 69, 1);
+}
+
+.form-group.has-success .form-control {
+    box-shadow: 0 0 0 0.125rem rgba(40, 167, 69, 1);
+}
