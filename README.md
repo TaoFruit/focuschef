@@ -14,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Tools/IDE:
-1. <a href="https://code.visualstudio.com/download">VS Code <small>(Preffered)</small></a> or any another IDE to make changes into the code.
+1. <a href="https://code.visualstudio.com/download">VS Code <small>(Preferred)</small></a> or any another IDE to make changes into the code.
 2. Git should be installed in the system.
 
 Languages/Technologies used in the project:
@@ -37,6 +37,15 @@ Languages/Technologies used in the project:
     $ git clone your_forked_repo
     $ cd foco
     ```
+    **Note: Current branch should be gh-pages. To check the current branch type following in git bash**
+    ```sh
+    $ git branch
+    ```
+    <b>To change the branch to gh-pages.</b>
+
+    ```sh
+    $ git checkout gh-pages
+    ```
 3. If using <b>VS Code</b> project can be opened directly using command line:
     ```sh
     $ code .
@@ -54,7 +63,7 @@ Languages/Technologies used in the project:
 ## Contributing
 > We welcome <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests" target="_blank">Pull Requests</a> from everyone, whether you are a student, a teacher, or an expert in the field. When first making a pull request, please keep it short &amp; brief as we establish a relationship.
 
-To contribute to the project, fix the <a href="https://github.com/TaoFruit/focuschef/issues"><b>Issues</b></a>, and then make a <a href="https://github.com/TaoFruit/focuschef/compare"><b>Pull request</b></a>.
+To contribute to the project, fix the <a href="https://github.com/TaoFruit/focuschef/issues"><b>Issues</b></a>, and then make a <a href="https://github.com/TaoFruit/focuschef/pulls"><b>Pull request</b></a>.
 
 ## License
 
